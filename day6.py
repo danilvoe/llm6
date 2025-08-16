@@ -6,6 +6,7 @@ from mcp import ClientSession
 from mcp.client.streamable_http import streamablehttp_client
 
 async def main():
+    #markitdown-mcp --http --host 127.0.0.1 --port 3001
     async with streamablehttp_client("http://127.0.0.1:3001/mcp") as (
         read_stream,
         write_stream,
